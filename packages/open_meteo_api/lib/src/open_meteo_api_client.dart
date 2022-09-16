@@ -55,7 +55,7 @@ class OpenMeteoApiClient {
     required double latitude,
     required double longitude,
   }) async {
-    final weatherRequest = Uri.https(_baseUrlWeather, 'v1/forecast', {
+    final weatherRequest = Uri.https(_baseUrlWeather, '/v1/forecast', {
       'latitude': '$latitude',
       'longitutde': '$longitude',
       'current_weather': 'true',
